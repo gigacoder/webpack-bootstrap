@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+var purify = require('purifycss-webpack');
 
 module.exports = {
     entry: {
@@ -22,16 +22,16 @@ module.exports = {
                 }
             },
             {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract("css-loader?minimize!sass-loader")
+            },
+            {
                 test: /\.css$/,
                 loader: "css-loader"
             },
             {
                 test: /\.css$/,
                 loader: "css-loader!autoprefixer-loader"
-            },
-            {
-                test: /\.scss$/,
-                loader: ExtractTextPlugin.extract("css-loader!sass-loader")
             },
             {
                 test: /\.(png|jpg|gif)$/,
