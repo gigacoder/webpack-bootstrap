@@ -1,0 +1,443 @@
+// @import './bootstrap/pre-customizations.scss';
+@import './bootstrap/customizations.scss';
+@import './scrolling-nav.css';
+
+
+@font-face {
+    font-family: 'raleway-thin';
+    src: url('./fonts/Raleway-Thin.ttf');
+}
+@font-face {
+    font-family: 'raleway';
+    src: url('./fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'raleway-medium';
+    src: url('./fonts/Raleway-Medium.ttf');
+}
+body {
+    // margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: raleway;
+    letter-spacing: 0.1em;
+    -moz-font-feature-settings: 'kern';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: ltr;
+    color: #000000;
+}
+.glyphicon{
+    color: #ff9933;
+}
+.btn{
+    border-radius: 0px;
+    border: 3px solid #000000;
+    background: transparent;
+    color: #000000;
+    font-family: raleway-medium;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: #ff9933;
+    border-color:  #ff9933;
+    text-decoration: none;
+    background: #ffffff;
+}
+.form-control:focus{
+    outline: none;
+    box-shadow: 0px;
+    border: 3px solid #000000;
+    border-right: 0px;
+}
+.hyapps-padding-lg-vert{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.hyapps-padding-sm-vert{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.hyapps-input-group{
+    width: 90%;
+}
+.hyapps-icon-padding{
+    padding-right: 20px !important;
+}
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('./images/theroyalcoffee.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+}
+.hyapps-black-heading-box{
+    border: 5px solid #000000;
+    border-left: 0px;
+    border-right: 0px;
+    h4{
+        color: #000000;
+        font-family: raleway-medium;
+        text-align: center;
+    }
+
+}
+.hyapps-store-deatil-box{
+        .btn{
+            margin-top: 20px;
+        }
+}
+.hyapps-bold-text{
+    font-weight: bolder;
+}
+.headline {
+    padding: 120px 0;
+}
+.hyapps-headline-container{
+    border: 3px solid #fff;
+    width: 400px;
+    height: auto;
+    margin: auto;
+    background: #fff;
+    background: rgba(255,255,255,0.4);
+    border-left: 0px;
+    border-right: 0px;
+}
+.hyapps-medium-text{
+    font-size: 30px;
+    font-family: raleway-medium;
+}
+.hyapps-center-content{
+     width: 70%;
+    margin: auto;
+    font-family: raleway;
+    font-size: 24px;
+    text-align: center;
+
+}
+.hyapps-no-padding{
+    padding: 0px !important;
+}
+.hyapps-padding-sm{
+    padding: 10px !important;
+}
+.headline h1 {
+    font-size: 70px;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.headline h2 {
+    font-size: 77px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+.navbar-inverse{
+    background: #000000;
+}
+.navbar-brand img{
+    float: left
+}
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette {
+    overflow: hidden;
+}
+
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+.featurette-heading {
+    font-size: 50px;
+}
+
+footer {
+    margin: 50px 0;
+}
+// Template styling
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  font-size: 18px;
+  font-family: raleway;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar a{
+    color: $brand-info !important;
+    height: 70px
+}
+.navbar-nav > li > a {
+    padding-top: 28px !important;
+}
+.navbar-brand{
+    padding-top: 20px !important;
+}
+.navbar-brand span{
+    line-height: 2em;
+    font-family: raleway-medium;
+}
+.hyapps-full-width-image{
+    img{
+        width: 100%;
+        height: 80vh;
+    }
+}
+.hyapps-half-height{
+    width: 100%;
+    height: 50%;
+}
+.hyapps-cover-img{
+    img{
+        width: 100%;
+    }
+}
+.hyapps-bg-dark{
+    background: #a3c2c2;
+}
+.hyapps-bg-light{
+    background: #f0f5f5;
+    height: 100vh;
+}
+.hyapps-list{
+    ul{
+        list-style: none;
+    }
+    li{
+        font-size: 20px;
+        padding: 5px;
+    }
+    h3{
+        font-family: raleway-medium;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        border-bottom: 2px dashed #84a3a3;
+    }
+}
+.hyapps-form-control{
+    height: 40px;
+    border: 3px solid #000000;
+    border-radius: 0px;
+    border-right: 0px;
+}
+.hyapps-side-img{
+    background: url('./images/coffee-expresso.jpg') no-repeat center center scroll;
+    background-size: 100%;
+    height: 100vh;
+
+}
+.hyapps-parent-div{
+    height: 80%;
+}
+footer{
+    .hyapps-list a{
+        text-decoration: none;
+        color: #000000;
+    }
+    ul{
+        -webkit-padding-start: 20px;
+        list-style-type: circle;
+        color: #ff9933;
+    }
+    li{
+        // list-style: none;
+    }
+    h3{
+        border-bottom: 2px solid #ff9933;
+    }
+}
+/* Social media icons*/
+ul.hyapps-social-media {
+    list-style: none;
+    overflow: auto;
+    margin-top: 20px;
+    -webkit-padding-start: 0px;
+}
+ul.hyapps-social-media li {
+    width: 29px;
+    height: 29px;
+    padding: 0 5px 0 0;
+    float: left;
+}
+ul.hyapps-social-media li a {
+    width: 29px;
+    height: 29px;
+    display: block;
+    background: url('./images/social-media-icons.png') no-repeat; 
+}
+ul.hyapps-social-media li a.facebook{ 
+    background-position: -91px -28px;
+}
+ul.hyapps-social-media li a.twitter{ 
+    background-position:  -60px 1px; 
+}
+ul.hyapps-social-media li a.youtube{ 
+    background-position: -120px 1px;
+}
+ul.hyapps-social-media li a.google{ 
+    background-position: -29px 1px;
+}
+ul.hyapps-social-media li a.pinterest{ 
+    background-position: -59px -28px;
+}
+/*---------------- media queries starts here ---------------------*/
+@media(max-width:1200px) {
+    .container{
+        width: 95%;
+    }
+    .headline h1 {
+        font-size: 70px;
+    }
+
+    .headline h2 {
+        font-size: 63px;
+    }
+
+    .featurette-divider {
+        margin: 50px 0;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 20px;
+    }
+
+    .featurette-heading {
+        font-size: 35px;
+    }
+    .navbar-nav > li > a {
+        padding-top: 28px !important;
+    }
+
+}
+
+
+@media(max-width:991px) {
+    .headline h1 {
+        font-size: 55px;
+    }
+
+    .headline h2 {
+        font-size: 50px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-image {
+        max-width: 50%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+    .navbar-nav > li > a {
+        padding-top: 28px !important;
+    }
+
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-heading {
+        font-size: 25px;
+    }
+    .navbar-nav > li > a {
+        padding-top: 28px !important;
+    }
+  
+}
+
+@media(max-width:668px) {
+    .headline h1 {
+        font-size: 40px;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+    .navbar-nav > li > a {
+        padding-top: 28px !important;
+    }
+ 
+}
+
+@media(max-width:640px) {
+    .headline {
+        padding: 75px 0 25px 0;
+    }
+
+    .headline h1 {
+        font-size: 60px;
+    }
+
+    .headline h2 {
+        font-size: 30px;
+    }
+     .btn{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:375px) {
+    .featurette-divider {
+        margin: 10px 0;
+    }
+
+    .featurette-image {
+        max-width: 100%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .btn{
+        margin-bottom: 20px;
+    }
+ 
+}

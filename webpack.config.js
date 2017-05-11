@@ -47,26 +47,36 @@ module.exports = {
     },
     module: {
         rules: [
+            // SASS LOADER
             {
                 test: /\.scss$/, 
                 use: cssConfig
             },
+            // JS LOADER
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
             },
+            // FILE LOADER
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
+                 test: /\.(jpe?g|png|gif|svg)$/i,
                 use: [
                   'file-loader?name=images/[name].[ext]',
                   'image-webpack-loader?bypassOnDebug'
                 ]
             },
-            { test: /\.(woff2?)$/, use: 'url-loader?limit=10000&name=fonts/[name].[ext]' },
+            // HTML LOADER
+            {
+                test: /\.html$/,
+                loader: 'html-loader'
+            },
+            // FONTS LOADER
+            { test: /\.(woff2?)$/, use: 'url-loader?limit=100000&name=fonts/[name].[ext]' },
             { test: /\.(ttf|eot)$/, use: 'file-loader?name=fonts/[name].[ext]' },
             // Bootstrap 3
             { test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, use: 'imports-loader?jQuery=jquery' }
+
         ]
     },
     devServer: {
@@ -89,14 +99,16 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
-        // Make sure this is after ExtractTextPlugin!
         new PurifyCSSPlugin({
-            // Give paths to parse for rules. These should be absolute!
             paths: glob.sync(path.join(__dirname, 'src/*.html')),
             purifyOptions : {
                 minify : true
             }
-        })
+        }),
+       new webpack.ProvidePlugin({
+           $: "jquery",
+           jQuery: "jquery"
+       })
     ]
 }
 
