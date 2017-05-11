@@ -1,0 +1,8 @@
+import css from './app.scss';
+require('./jquery.easing.min.js');
+require('./scrolling-nav.js');
+<<<<<<< HEAD
+ 
+=======
+ 
+>>>>>>> 3d86394c9e1f68e8515462afb214b52cd15b98c0
