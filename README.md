@@ -16,7 +16,7 @@ Run npm install to install node dependencies mentioned on package.json
 
 Start the webpack server
 
-```npm run build```
+```webpack-dev-server```
 
 Run below command for production mode.
 
